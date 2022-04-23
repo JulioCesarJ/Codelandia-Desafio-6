@@ -52,6 +52,7 @@ img {
 
 /* Main */
 #main {
+  margin: 0 15px;
   display: grid;
   justify-content: center;
 }
@@ -76,21 +77,27 @@ img {
   margin-bottom: 20px;
 }
 
-.clock::before{
-  content: url(image/clock.svg);
-  padding-right: 5px;
-  display: inline-block;
-  position: relative;
-  top: 5px;
-}
-
-.card, .list-star{
+.card {
+  margin-bottom: 30px;
   font-family: 'B612-Regular';
   display: flex;
-  font-size: 24px;
-  /* align-items: center; */
+  font-size: 16px;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+}
+
+.list-star ,.clock{
+  display: flex;
+  align-items: flex-end;
+}
+
+.clock::before {
+  content: '';
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+  color: white;
+  background-image: url(image/clock.svg);
 }
 
 /* Botoes */
@@ -122,7 +129,6 @@ img {
 
 @media (min-width: 767px) {
   #main {
-    margin: 0 15px;
     align-items: center;
     display: grid;
     grid-template-columns: max-content 1fr;    
