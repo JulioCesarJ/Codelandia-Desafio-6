@@ -4,9 +4,9 @@ Desafio proposto pelo Yuri Code - Codelândia
 
 - Usado somente HTML e CSS
 
-<img src="Studio Ghibli.png" width="1000px"> 
+<img src="Assets/Desafio 6 - desktop.png" width="1000px"> 
 
-<img src="Studio Ghibli (Mobile).png" width="300px"> 
+<img src="Assets/Desafio 6 - mobile.png" width="300px"> 
 
 
 <a href="https://juliocesarj.github.io/Codelandia-Desafio-6/">Clique aqui para visualizar o projeto</a>
