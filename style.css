@@ -19,6 +19,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-rows: max-content 1fr;
+  gap: 100px;
   justify-content: center;
   background: rgba(0, 0, 0, 0.7) url(image/background.png) center no-repeat;
   background-size: cover;
@@ -31,7 +32,8 @@ img {
 /* Header */
 
 #header {
-  margin-top: 35px;
+  align-self: flex-end;
+  margin-top: 150px;
 }
 
 #header h2 {
@@ -129,7 +131,7 @@ img {
 
 @media (min-width: 767px) {
   #main {
-    align-items: center;
+    align-items: flex-start;
     display: grid;
     grid-template-columns: max-content 1fr;    
     column-gap: 75px;
