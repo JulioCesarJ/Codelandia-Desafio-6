@@ -1,0 +1,147 @@
+/* Fontes */
+@font-face {
+  font-family: 'B612-regular';
+  src: url('fontesB612/B612-Regular.ttf');
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: #ffffff;
+}
+
+/* Mobile First */
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: max-content 1fr;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7) url(image/background.png) center no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+img {
+  max-width: 100%;
+}
+/* Header */
+
+#header {
+  margin-top: 35px;
+}
+
+#header h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'B612-regular';
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+#header h1 {
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'B612-regular';
+  font-weight: bold;
+}
+
+
+/* Main */
+#main {
+  display: grid;
+  justify-content: center;
+}
+
+/* Card */
+
+.img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* Conteudo */
+.content {
+  max-width: 500px;
+}
+
+.text {
+  font-size: 1rem;
+  font-family: 'B612-Regular';
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.clock::before{
+  content: url(image/clock.svg);
+  padding-right: 5px;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+}
+
+.card, .list-star{
+  font-family: 'B612-Regular';
+  display: flex;
+  font-size: 24px;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Botoes */
+
+.assistir{
+  font-family: 'B612-Regular';
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 15px 27px;
+  background-color: #0072D2;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.trailer{
+  font-family: 'B612-Regular';
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 15px 25px;
+  background-color: #131318;
+  border: none;
+  cursor: pointer;
+}
+
+.assistir:hover, .trailer:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 767px) {
+  #main {
+    margin: 0 15px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: max-content 1fr;    
+    column-gap: 75px;
+  }
+
+.img {
+  display: block;
+  margin: 0;
+  max-width: max-content;
+}
+
+.content {
+  max-width: 722px;
+}
+
+.text{
+  text-align: left;
+  font-size: 20px;
+}
+
+}
